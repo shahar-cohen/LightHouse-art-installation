@@ -1,0 +1,32 @@
+working vlc command:
+
+cvlc -I dummy v4l2:///dev/video0 --no-audio --sout=#"http{mux=mpjpeg,dst=:8081}"
+
+change size:
+cvlc -I dummy v4l2:///dev/video0 :v4l2-width=640 :v4l2-height=480 --no-audio --sout=#"http{mux=mpjpeg,dst=:8081}"
+
+
+
+try to increase mux cache:
+vlc -I dummy v4l2:///dev/video0 --no-audio --sout-mux-caching=10000 --sout=#"http{mux=mpjpeg,dst=:8080/video.mpjpeg}"
+
+cvlc -I dummy v4l2:///dev/video0 --no-audio --sout-mux-caching=10000 --sout=#"transcode{vcodec=h264,vb=256,fps=50}:http{mux=mpjpeg,dst=:8080/video.mpjpeg}"
+
+cvlc v4l2:// :v4l2-dev=/dev/video0 \
+            :v4l2-width=640 \
+            :v4l2-height=480 -- \
+            sout="#transcode{vcodec=mjpeg,vb=256,fps=30}:standard{dst=:8080/video.mpjpeg}" \
+            -I dummy
+
+
+gst-launch-1.0 -v -e v4l2src device=/dev/video0 ! 'video/x-raw,format=I420,width=640,height=480,framerate=30/1' ! omxh264enc target-bitrate=6500000 control-rate=variable ! rtph264pay pt=96 ! udpsink host=1.0.0.10 port=8080
+
+gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=1 ! video/x-raw,width=640,height=480 ! udpsink host=10.0.0.1 port=8080
+
+gst-launch -v v4l2src ! "image/jpeg,width=640,height=480,framerate=30/1" ! rtpjpegpay ! udpsink host=10.0.0.1 port=5001
+
+
+
+uv4l --config-file=/etc/uv4l/uv4l-uvc.conf --auto-video_nr yes --driver uvc --device-id=1902:3232 --server-option '--port=9090' --server-option '--max-queued-connections=30' --server-option '--max-streams=5' --server-option '--max-threads=29'
+
+
