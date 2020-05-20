@@ -6,6 +6,8 @@ The tower is a tall, thin, triangular pyramid, each side of which is a screen wh
 Watch it in operation here:
 https://youtu.be/Ru6Z45Rh16o
 
+=============================================================================
+
 This project assumes a system with 3 main parts:
 
 1) A Raspberry pi connected to a servo motor controlling the tilt, a stepper motor + driver controlling the pan movement,
@@ -14,10 +16,11 @@ a camera and a flashlight.
 The Raspberry pi must run the Pigpio daemon that enables controling it's i/o pins remotely and send the video over UDP by 
 some software (such as VLC).
 
-2) A projection mapping software connected to 3 projectors
+2) A projection mapping software
 
-The software runs on the same computer as this program. it receives instructions from this program
-and changes the image the projectors would project on the tower.
+The software runs on the same computer as this program, and is connected to 3 projectors.
+it receives instructions from this program and changes the image the projectors would project on the tower.
+The software must have OSC communication enabled and set up with the same addresses as specified in the config file. 
 
 3) This program.
 
