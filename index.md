@@ -19,11 +19,14 @@ This program receives images from the Raspberry pi and according to the images r
 Each of this program's features (pan movement, tilt movement, receiving images, detection/tracking, OSC communication) runs on a different thread.
 
 ### Files
-FILES: Main.py - the main part of the program. config.py - a file with constants that can be tweeked to change the behaviour of the installation. util.py - a file containing static functions
+Main.py - the main part of the program.
+config.py - a file with constants that can be tweeked to change the behaviour of the installation.
+util.py - a file containing static functions
 
 two files pertaining to the object recognition model: MobileNetSSD_deploy.prototxt MobileNetSSD_deploy.caffemodel
 
-video files: lighthouse_pannel_*_animation.mp4 - an animation representing a lighthouse for each pannel of the tower watch_tower_animation.mp4 - an animation representing a watchtower
+video files: lighthouse_pannel_*_animation.mp4 - an animation representing a lighthouse for each pannel of the tower
+watch_tower_animation.mp4 - an animation representing a watchtower
 
 ### Requirements
 
