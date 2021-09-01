@@ -1,9 +1,9 @@
-<iframe width="560" height="315" src="https://youtu.be/Ru6Z45Rh16o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ru6Z45Rh16o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### LightHouse
-# Interactive computer vision art installation
-
-A lighthouse/watchtower that tracks people and shines a light on them. The tower is a tall, thin, triangular pyramid, each side of which is a screen which has images projected onto it.
+# LightHouse
+### Interactive computer vision art installation
+A cross between a watchtower and a lighthouse, switching between shining a guiding light and compulsively tracking passersby.
+The tower is a tall, thin, triangular pyramid, each side of which is a screen which has images projected onto it.
 
 ### Components
 1. Control and motors
