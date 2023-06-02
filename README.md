@@ -1,9 +1,9 @@
-# LightHouse-art-installation
+# LightHouse — Interactive computer vision art installation
 
 A lighthouse/watchtower that tracks people and shines a light on them.
-The tower is a tall, thin, triangular pyramid, each side of which is a screen which has images projected onto it.
+The tower is a tall, thin, triangular pyramid, each side of which is a screen for projection-mapping our custom made visuals.
 
-
+https://github.com/shahar-cohen/LightHouse-art-installation/assets/39126169/29880c93-607c-4385-bfb0-9e07b88a2a73
 
 =============================================================================
 
