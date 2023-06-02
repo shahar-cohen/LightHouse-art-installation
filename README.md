@@ -3,7 +3,7 @@
 A lighthouse/watchtower that tracks people and shines a light on them.
 The tower is a tall, thin, triangular pyramid, each side of which is a screen for projection-mapping our custom made visuals.
 
-Uploading LightHouse - an interactive art installation.mp4…
+https://github.com/shahar-cohen/LightHouse-art-installation/assets/39126169/87cdeb3b-dfe1-452e-bee7-6d17d4630fb0
 
 =============================================================================
 
