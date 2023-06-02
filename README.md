@@ -3,8 +3,7 @@
 A lighthouse/watchtower that tracks people and shines a light on them.
 The tower is a tall, thin, triangular pyramid, each side of which is a screen which has images projected onto it.
 
-Watch it in operation here:
-https://youtu.be/Ru6Z45Rh16o
+
 
 =============================================================================
 
